@@ -183,6 +183,10 @@ typedef struct {
       union {
         struct {
           uint32_t          EID:29;     /**< @brief Extended identifier.    */
+          uint32_t          ESI:1;
+          uint32_t          XTD:1;
+          uint32_t          STR:1;
+
         } ext;
         struct {
           uint32_t          _R1:18;     /**< @brief Reserved for offset.    */
